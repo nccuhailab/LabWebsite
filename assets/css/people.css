@@ -1,0 +1,316 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+    padding-top: 55px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* People Hero Section */
+.people-hero {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0D2331;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+    transition-delay: 0.3s;
+}
+
+/* Preload Animation States */
+body.is-preload .hero-title {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+body.is-preload .hero-subtitle {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0D2331;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Faculty Section */
+.faculty-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.faculty-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faculty-image {
+    flex: 0 0 300px;
+}
+
+.faculty-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.faculty-image img:hover {
+    transform: scale(1.02);
+}
+
+.faculty-info {
+    flex: 1;
+}
+
+.faculty-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.faculty-name a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.faculty-name a:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.faculty-title {
+    font-size: 1.1rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.faculty-bio p {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.faculty-bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* Alumni Section */
+.alumni-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Alumnus Card */
+.alumnus-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.alumnus-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-color: #2563eb;
+}
+
+.alumnus-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.alumnus-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0D2331;
+    margin: 0;
+}
+
+.alumnus-degree {
+    font-size: 0.95rem;
+    color: #2563eb;
+    font-weight: 500;
+    margin: 0;
+}
+
+.alumnus-current {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background: #0D2331;
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .faculty-section,
+    .alumni-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .faculty-profile {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .faculty-image {
+        flex: none;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .faculty-name {
+        font-size: 1.6rem;
+    }
+
+    .faculty-title {
+        font-size: 1rem;
+    }
+
+    .faculty-bio {
+        text-align: left;
+    }
+
+    .alumni-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .faculty-name {
+        font-size: 1.4rem;
+    }
+
+    .alumnus-card {
+        padding: 16px;
+    }
+}

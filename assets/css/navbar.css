@@ -1,0 +1,142 @@
+/* Navigation Bar Styles */
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+/* Fixed navbar with blur effect */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 30px;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    text-decoration: none;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    min-width: 150px;
+    margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background: #f8fafc;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Mobile menu toggle */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+        height: 35px;
+    }
+}
