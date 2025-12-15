@@ -203,7 +203,7 @@ body.is-menu-visible #menu {
 /* Adjust banner for fixed header */
 #banner {
     padding-top: 8em;
-    background-image: linear-gradient(rgba(46, 49, 65, 0.85), rgba(46, 49, 65, 0.85)), url('../../images/lab.JPG');
+    background-image: linear-gradient(rgba(46, 49, 65, 0.85), rgba(46, 49, 65, 0.85)), url('../../images/lab.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
