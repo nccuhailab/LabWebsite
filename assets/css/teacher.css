@@ -1,389 +1,149 @@
-/* Base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Section titles */
+h3.major {
+    font-size: 1.5em;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #fafafa;
-    padding-top: 55px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Profile Hero Section */
-.profile-hero {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #0D2331;
-    margin-bottom: 15px;
-    line-height: 1.2;
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
-    color: #2563eb;
-    font-weight: 600;
-    margin-bottom: 40px;
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 0.75s ease, opacity 0.75s ease;
-    transition-delay: 0.3s;
-}
-
-/* Preload Animation States */
-body.is-preload .hero-title {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-body.is-preload .hero-subtitle {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-/* External Links */
+/* External links section */
 .external-links {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 1.5em;
+    margin-top: 2em;
     flex-wrap: wrap;
 }
 
 .external-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: white;
-    color: #2563eb;
-    padding: 12px 20px;
-    border-radius: 25px;
+    gap: 0.5em;
+    padding: 0.75em 1.5em;
+    background: rgba(255, 255, 255, 0.05);
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    transition: all 0.2s ease;
 }
 
 .external-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
-    text-decoration: none;
-    color: #1d4ed8;
-    border-color: #2563eb;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #8892d6;
+    color: #8892d6;
 }
 
 .external-link img {
-    width: 24px;
-    height: 24px;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .cv-icon {
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
-/* Profile Content */
-.profile-content {
-    padding: 80px 0;
-    background: white;
-}
-
-/* Content Sections */
-.content-section {
-    margin-bottom: 60px;
-}
-
-.content-section:last-child {
-    margin-bottom: 0;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0D2331;
-    margin-bottom: 30px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.section-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: #2563eb;
-    border-radius: 2px;
-}
-
-/* Research Interests */
+/* Research interests tags */
 .interests-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .interest-tag {
-    background: #f1f5f9;
-    color: #2563eb;
-    padding: 8px 16px;
+    display: inline-block;
+    background: #8892d6;
+    color: #ffffff;
+    padding: 0.5em 1em;
     border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
-.interest-tag:hover {
-    background: #2563eb;
-    color: white;
-    transform: translateY(-1px);
-}
-
-/* Timeline */
+/* Timeline styles */
 .timeline {
     position: relative;
-    padding-left: 30px;
+    padding-left: 3em;
 }
 
 .timeline:before {
     content: '';
     position: absolute;
-    left: 12px;
-    top: 0;
-    bottom: 0;
+    left: 0.75em;
+    top: 0.5em;
+    bottom: 0.5em;
     width: 2px;
-    background: #e5e7eb;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    margin-bottom: 2em;
+    padding-left: 1.5em;
 }
 
 .timeline-item:before {
     content: '';
     position: absolute;
-    left: -23px;
-    top: 8px;
-    width: 8px;
-    height: 8px;
+    left: -2.6em;
+    top: 0.3em;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background: #2563eb;
-    border: 2px solid white;
-    box-shadow: 0 0 0 2px #2563eb;
-}
-
-.timeline-content {
-    flex: 1;
+    background: #8892d6;
+    border: 3px solid #2e3141;
+    box-shadow: 0 0 0 2px rgba(136, 146, 214, 0.3);
 }
 
 .timeline-content h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #0D2331;
-    margin-bottom: 5px;
-}
-
-.institution {
-    color: #64748b;
-    font-size: 1rem;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.additional-info {
-    color: #64748b;
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-.dissertation {
-    color: #2563eb;
-    font-style: italic;
-    margin: 8px 0 5px 0;
-    font-size: 0.95rem;
-}
-
-.advisers {
-    color: #64748b;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.award-details {
-    color: #2563eb;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 5px 0;
-}
-
-.award-org {
-    color: #64748b;
-    font-size: 0.95rem;
-    margin: 0;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
 }
 
 .timeline-date {
-    background: #f1f5f9;
-    color: #475569;
-    padding: 6px 12px;
-    border-radius: 15px;
-    font-size: 0.9rem;
+    color: #8892d6;
     font-weight: 600;
-    white-space: nowrap;
-    align-self: flex-start;
+    font-size: 1em;
+    margin-bottom: 0.5em;
 }
 
-/* Footer */
-.footer {
-    background: #0D2331;
-    color: white;
-    padding: 60px 0 30px;
-    margin-top: 60px;
+.institution,
+.additional-info,
+.dissertation,
+.advisers,
+.award-details,
+.award-org {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1em;
+    margin: 0.25em 0;
 }
 
-.footer-content {
-    text-align: center;
+.additional-info,
+.award-org,
+.dissertation {
+    font-style: italic;
 }
 
-.footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+/* Content sections spacing */
+.content-section {
+    margin: 3em 0;
 }
 
-.footer p {
-    color: #94a3b8;
-    margin-bottom: 10px;
+.content-section:first-child {
+    margin-top: 0;
 }
 
-/* Scroll to top button */
-.scroll-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    font-size: 20px;
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-to-top:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
+@media screen and (max-width: 736px) {
     .external-links {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-content {
-        padding: 60px 0;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-
-    .timeline {
-        padding-left: 20px;
-    }
-
-    .timeline:before {
-        left: 10px;
-    }
-
-    .timeline-item {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-    }
-
-    .timeline-item:before {
-        left: -13px;
-    }
-
-    .timeline-date {
-        align-self: flex-start;
-        margin-top: -5px;
-    }
-
-    .education-item {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .education-date {
-        align-self: flex-start;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
     }
 
     .external-link {
-        padding: 10px 16px;
-        font-size: 0.9rem;
+        width: 100%;
     }
 
-    .timeline-content h3,
-    .education-content h3,
-    .award-item h3 {
-        font-size: 1.1rem;
+    .timeline {
+        padding-left: 1.5em;
     }
 
-    .award-item {
-        padding: 16px;
+    .timeline-item {
+        padding-left: 1em;
     }
 }

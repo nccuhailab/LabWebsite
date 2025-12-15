@@ -1,0 +1,9 @@
+/* Section titles */
+h3.major {
+    font-size: 1.5em;
+}
+
+/* Features card titles */
+section.features article h4.major {
+    font-size: 1.2em;
+}

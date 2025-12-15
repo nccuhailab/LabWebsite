@@ -1,178 +1,266 @@
-<!DOCTYPE html>
-<html lang="en" class="is-preload">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>HAI Lab - Home</title>
-    <link rel="icon" href="./images/HAILAB_logo.png" />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body class="is-preload">
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./images/HAILAB_logo.png" alt="HAI Lab Logo" />
-                Human Automation Interaction Lab
-            </a>
-            
-            <button class="mobile-toggle">☰</button>
-            
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="./research.html" id="research">Research</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./hri.html">HRI</a>
-                        <a class="dropdown-item" href="./eeg.html">EEG</a>
-                        <a class="dropdown-item" href="./hai.html">HAI</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./people.html">People</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./teaching.html">Teaching</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./publications.html">Publications</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<!DOCTYPE HTML>
+<!--
+	HAI Lab - Home Page
+	Base Template: Spectral by HTML5 UP
+	Navigation: Solid State by HTML5 UP
+-->
+<html>
+	<head>
+		<title>HAI Lab - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="./images/HAILAB_logo.png" />
+		
+		<!-- Spectral CSS for landing page -->
+		<link rel="stylesheet" href="assets/css/spectral-main.css" />
+				
+		<noscript><link rel="stylesheet" href="assets/css/spectral-noscript.css" /></noscript>
+                
+		<!-- Solid State CSS for menu -->
+        <link rel="stylesheet" href="assets/css/index-menu-override.css" />
+		<link rel="stylesheet" href="assets/css/custom-menu.css" />
+        
+        <link rel="stylesheet" href="assets/css/index.css" />		
+	</head>
+	<body class="landing is-preload">
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <h2>Human Automation Interaction Lab</h2>
-            <p>Empowering Tomorrow's Human-Machine Harmony<br /></p>
-        </div>
-        <div class="button-container">
-            <button class="learn-more" style="width: auto !important; max-width: 200px !important;" onclick="scrollToResearch()">Learn More</button>
-        </div>
-    </section>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <!-- Research Topic -->
-    <section class="research-section" id="research-areas">
-        <div class="container">
-            <h2 class="section-title">Research Topic</h2>
-            <p class="section-subtitle">
-                Our lab explores three key domains to enhance collaboration between humans and advanced technologies
-            </p>
-            
-            <div class="research-grid">
-                <a href="./hri.html" class="research-card">
-                    <div class="research-image">
-                        <img src="./images/HRI_overview_photo.png" alt="Human Robot Interaction" />
-                        <div class="research-badge">HRI</div>
-                    </div>
-                    <div class="research-content">
-                        <h3 class="research-title">
-                            Human Robot Interaction
-                        </h3>
-                        <p class="research-description">
-                            Exploring adaptive and interdependent actions between humans and humanoid robots, 
-                            working cohesively toward shared objectives.
-                        </p>
-                        <span class="research-arrow">Learn more →</span>
-                    </div>
-                </a>
+				<!-- Solid State Header -->
+				<header id="solid-header">
+					<h1>
+						<a href="index.html">
+							<img src="./images/HAILAB_logo.png" alt="HAI Lab" style="height: 1.5em; vertical-align: middle; margin-right: 0.5em;" />
+							HAI Lab
+						</a>
+					</h1>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
 
-                <a href="./eeg.html" class="research-card">
-                    <div class="research-image">
-                        <img src="./images/EEG_overview_photo.png" alt="Electroencephalography" />
-                        <div class="research-badge">EEG</div>
-                    </div>
-                    <div class="research-content">
-                        <h3 class="research-title">Electroencephalography</h3>
-                        <p class="research-description">
-                            Using EEG to capture real-time brain activity and understand cognitive processes 
-                            in human-automation interaction scenarios.
-                        </p>
-                        <span class="research-arrow">Learn more →</span>
-                    </div>
-                </a>
+				<!-- Solid State Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="has-submenu">
+								<a href="research.html">Research</a>
+								<ul class="submenu">
+									<li><a href="hri.html">HRI</a></li>
+									<li><a href="eeg.html">EEG</a></li>
+									<li><a href="hai.html">HAI</a></li>
+								</ul>
+							</li>
+							<li><a href="people.html">People</a></li>
+							<li><a href="teaching.html">Teaching</a></li>
+							<li><a href="publications.html">Publications</a></li>
+						</ul>
+						<a href="#close" class="close" aria-label="Close menu">Close</a>
+					</div>
+				</nav>
 
-                <a href="./hai.html" class="research-card">
-                    <div class="research-image">
-                        <img src="./images/HAI_overview_photo.jpg" alt="Human Automation Interaction" />
-                        <div class="research-badge">HAI</div>
-                    </div>
-                    <div class="research-content">
-                        <h3 class="research-title">Human Automation Interaction</h3>
-                        <p class="research-description">
-                            Creating intuitive and efficient collaborations between humans and automated systems 
-                            through adaptability, trust, and cognitive alignment.
-                        </p>
-                        <span class="research-arrow">Learn more →</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+				<!-- Banner -->
+				<section id="banner">
+					<div class="inner">
+						<div class="logo">
+							<img src="./images/HAILAB_logo.png" alt="HAI Lab Logo" />
+						</div>
+						<h2>Human Automation Interaction Lab</h2>
+						<p>Empowering Tomorrow's Human-Machine Harmony</p>
+						<ul class="actions">
+							<li><a href="#mission" class="button primary scrolly">Learn More</a></li>
+						</ul>
+					</div>
+				</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h3>Human Automation Interaction Lab</h3>
-                <p>Empowering people to work smarter with intelligent systems</p>
-                <p>© 2025 HAI Lab. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+				<!-- Mission -->
+				<section id="mission" class="wrapper style6 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Our Mission</h2>
+							<p>We design, develop, and disseminate knowledge of human-automation interaction technologies that assist and collaborate with people. We focus on enhancing collaboration and synergy between humans and advanced technologies through interdisciplinary research.</p>
+						</header>
+					</div>
+				</section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+				<!-- Team & Research - Spotlight Style -->
+				<section id="content" class="wrapper alt style2">
+                    <!-- Team -->
+                    <section class="spotlight">
+                        <div class="image">
+                            <a href="people.html">
+                                <img src="./images/lab.JPG" alt="Our Team" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Our Team</h2>
+                            <p>We are an interdisciplinary team affiliated with the Department of Management Information Systems at National Chengchi University. Our lab brings together researchers passionate about understanding and improving human interaction with automated systems and robots.</p>
+                            <a href="people.html" class="special">Meet Our Team</a>
+                        </div>
+                    </section>
 
-    <script>
-        // Remove preload class after page loads
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.body.classList.remove('is-preload');
-            }, 100);
-        });
+                    <!-- Research -->
+                    <section class="spotlight">
+                        <div class="image">
+                            <a href="research.html">
+                                <img src="./images/research.JPG" alt="Our Research" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Our Research</h2>
+                            <p>Our research spans three key domains: Human-Robot Interaction (HRI), Electroencephalography (EEG) for cognitive assessment, and Human-Automation Interaction (HAI). We conduct both basic and applied research to investigate the design of embodied AI systems that work effectively with people.</p>
+                            <a href="research.html" class="special">Explore Our Research</a>
+                        </div>
+                    </section>
 
-        // Scroll to top function
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+                    <!-- Publications -->
+                    <section class="spotlight">
+                        <div class="image">
+                            <a href="publications.html">
+                                <img src="./images/publications.JPG" alt="Publications" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2>Our Publications</h2>
+                            <p>We are committed to disseminating our research findings through peer-reviewed publications and open science practices. Our work has been published in leading conferences and journals in HCI, robotics, and human factors.</p>
+                            <a href="publications.html" class="special">View Our Publications</a>
+                        </div>
+                    </section>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2 class="major">Get in Touch</h2>
+						<p>Feel free to get in touch. We appreciate your support and interests.</p>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								HAI Lab, Dept. of Management Information Systems<br />
+								National Chengchi University<br />
+								Taipei, Taiwan
+							</li>
+							<li class="icon solid fa-envelope"><a href="mailto:nccuhailab@gmail.com">nccuhailab@gmail.com</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2025 HAI Lab. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!-- Spectral scripts for landing effects -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/spectral-main.js"></script>
+			
+			<!-- Solid State menu script -->
+			<script src="assets/js/custom-menu.js"></script>
+			
+			<!-- Header + menu behavior (Solid State-like) -->
+<script>
+(function () {
+    var body = document.body;
+    var header = document.getElementById('solid-header');
+    var banner = document.getElementById('banner');
+    var menu = document.getElementById('menu');
+
+    if (!header) return;
+
+    // Header: behave like Solid State (transparent at top, solid after banner)
+    function updateHeader() {
+        if (!banner) return;
+        var threshold = banner.offsetHeight - header.offsetHeight;
+        if (window.pageYOffset > threshold) header.classList.remove('alt');
+        else header.classList.add('alt');
+    }
+    window.addEventListener('scroll', updateHeader);
+    window.addEventListener('resize', updateHeader);
+    updateHeader();
+
+    // Menu: robust open/close (fix "X" not closing)
+    function openMenu(e) {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
+        body.classList.add('is-menu-visible');
+    }
+
+    function closeMenu(e) {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation();
         }
+        body.classList.remove('is-menu-visible');
 
-        // Smooth scroll to research section
-        function scrollToResearch() {
-            document.getElementById('research-areas').scrollIntoView({
-                behavior: 'smooth'
-            });
+        // If the close link changed the URL hash, clean it up so future clicks keep working.
+        if (location.hash === '#close' || location.hash === '#') {
+            history.replaceState(null, '', location.pathname + location.search);
         }
+    }
 
-        // Show/hide scroll to top button
-        window.addEventListener('scroll', function() {
-            const scrollButton = document.querySelector('.scroll-to-top');
-            if (window.pageYOffset > 300) {
-                scrollButton.classList.add('show');
-            } else {
-                scrollButton.classList.remove('show');
+    // Open: any link that targets #menu (capture phase to beat other handlers)
+    header.querySelectorAll('a[href="#menu"]').forEach(function (a) {
+        a.addEventListener('click', openMenu, true);
+    });
+
+    if (menu) {
+        // Close: X button
+        var closeLink = menu.querySelector('.close');
+        if (closeLink) closeLink.addEventListener('click', closeMenu, true);
+
+        // Close: click outside the inner panel
+        menu.addEventListener('click', function (e) {
+            if (e.target === menu) closeMenu(e);
+        }, true);
+
+        var inner = menu.querySelector('.inner');
+        if (inner) inner.addEventListener('click', function (e) { e.stopPropagation(); }, true);
+
+        
+        // Close: X button
+        var closeBtn = menu.querySelector('.close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+                closeMenu(e);
+            }, true);
+        }
+// Close when clicking any normal menu link (optional, feels nicer)
+        menu.querySelectorAll('a').forEach(function (a) {
+            if (!a.classList.contains('close') && a.getAttribute('href') && a.getAttribute('href').charAt(0) !== '#') {
+                a.addEventListener('click', closeMenu, true);
             }
         });
+    }
 
-        // Add smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
+    // Fallback: always close if a click hits the close button (capture, high priority)
+    window.addEventListener('click', function (e) {
+        var closeEl = e.target && e.target.closest ? e.target.closest('#menu .close') : null;
+        if (closeEl) closeMenu(e);
+    }, true);
+
+    // Close: ESC
+    window.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' || e.keyCode === 27) closeMenu();
+    });
+
+    // Fallback: if the close link navigates (e.g., to "#close" or "#"), still close the menu.
+    window.addEventListener('hashchange', function () {
+        if (location.hash === '#close' || location.hash === '#') closeMenu();
+    });
+})();
+</script>
+
+	</body>
 </html>

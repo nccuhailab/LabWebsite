@@ -1,0 +1,117 @@
+/* Research badge styling */
+.research-badge {
+    display: inline-block;
+    background: #8892d6;
+    color: #ffffff;
+    padding: 0.5em 1.5em;
+    border-radius: 0.35em;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+}
+
+/* Section titles */
+h3.major {
+    font-size: 1.5em;
+}
+
+/* Key research areas list */
+.research-areas-list {
+    list-style: none;
+    padding: 0;
+}
+
+.research-areas-list li {
+    padding: 1.5em 0;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.research-areas-list li:last-child {
+    border-bottom: none;
+}
+
+.research-areas-list h5 {
+    color: #8892d6;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.research-areas-list p {
+    margin: 0;
+}
+
+/* Project card */
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.project-card h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #ffffff;
+}
+
+.project-content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.project-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    flex: 0 0 40%;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-subsection {
+    margin-bottom: 2em;
+}
+
+.project-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.project-subsection h5 {
+    color: #8892d6;
+    margin-bottom: 0.75em;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Project section spacing */
+.project-section {
+    margin: 3em 0;
+}
+
+@media screen and (max-width: 980px) {
+    .project-content,
+    .project-content.reverse {
+        flex-direction: column;
+    }
+
+    .project-image {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
